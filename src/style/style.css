@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body {
+    font-family: Raleway, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #e65908;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    position: sticky;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 10px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    font-family: Raleway, sans-serif;
+    border-radius: 10px;
+    padding: 12px 24px;
+    border: 2px solid #e65908;
+    color: black;
+    font-size: 24px;
+    margin-top: auto;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.button-container button {
+    /* Tambahkan aturan ini untuk gaya tombol hapus dan arsip */
+    background-color: #ff0000; /* Ubah warna latar belakang sesuai kebutuhan */
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button-container button.archive {
+    /* Tambahkan aturan ini untuk tombol arsip */
+    background-color: #0066ff; /* Ubah warna latar belakang sesuai kebutuhan */
+}
+
+.button-container button:hover {
+    /* Tambahkan aturan ini untuk efek hover pada tombol */
+    opacity: 0.8;
+}
+
+
+button:hover {
+    background: #e65908;
+    color: white;
+}
+
+footer {
+    background-color: #e65908;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed; 
+    bottom: 0; 
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        padding: 40px 60px;
+    }
+}
